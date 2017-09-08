@@ -29,3 +29,25 @@
   #   it("check to see if movie is an anagram") do
   #     expect(paperEx.wins("paper")).to(eq("Tie"))
   #   end
+
+
+
+
+
+
+  def word_check_for_palindroms()
+#   end
+#
+#   def check_for_anagrams_word()
+#   end
+#
+#   def check_for_antigrams_word()
+#   end
+#
+#   def check_for_anagrams_sentance()
+#   end
+#
+#   def check_for_antigrams_sentance()
+#   end
+#
+# end

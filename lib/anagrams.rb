@@ -9,6 +9,6 @@ class Words < String
 
   def convert(user_input)
     user_input = user_input.downcase()
-    array.push(user_input)
+    array.chars(user_input)
   end
 end

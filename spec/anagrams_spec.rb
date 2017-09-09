@@ -3,6 +3,7 @@ require('anagrams')
 
 describe('#anagrams') do
   new_instance1 = Words.new('user_input')
+  
 
   it("Convert any uppercase letters to lowercase.") do
       expect(new_instance1.convert("Cat")).to(eq("cat"))

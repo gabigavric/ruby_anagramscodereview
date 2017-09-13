@@ -18,9 +18,16 @@ describe('#anagrams') do
   end
 
   it("check to see if words are annagrams") do
-      expect(new_instance1.check_annagrams?("evil","live"))
-      expect(new_instance1.check_annagrams?("cat","Cat")).to eq(false)
+      expect(new_instance1.check_annagram?("evil","live"))
+      expect(new_instance1.check_annagram?("tea","eat"))
+      expect(new_instance1.check_annagram?("cat","hat")).to eq(false)
   end
+
+  it("check to see if words are antigram") do
+      expect(new_instance1.check_antigram?("evil","dog"))
+      expect(new_instance1.check_antigram?("cat","hat")).to eq(false)
+  end
+
 
 
 

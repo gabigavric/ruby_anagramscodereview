@@ -6,13 +6,20 @@ class Words
     @input2 = input2
   end
 
-  def convert()
-    word1 = @input1.downcase().split(//)
-    word2 = @input2.downcase().split(//)
-
-    word1.chars().sort()
-    word2.chars().sort()
-
-    word1.char.sort ==  word2.char.sort
+  def to_lower(word)
+    word.downcase()
   end
+
+  def remove_spaces_to_char(word)
+      to_lower(word).gsub(/\s+/, "").split
+  end
+
+  def check_palindrome?()
+        remove_spaces_to_char(word1).sort() == remove_spaces_to_char(word2).sort()
+  end
+
+  def check_antigrams?()
+        remove_spaces_to_char(word1).reverse == remove_spaces_to_char(word2)
+  end
+
 end

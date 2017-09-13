@@ -8,9 +8,10 @@ describe('#anagrams') do
       expect(new_instance1.to_lower("Cat")).to(eq("cat"))
   end
 
-  it("remove whitespaces convert to lowercase chars") do
-      expect(new_instance1.remove_spaces_to_char("Cat")).to eq(['c','a','t'])
+  it("remove whitespaces special char convert to lowercase chars") do
+      expect(new_instance1.clean_word_to_char("Cat!")).to eq(['c','a','t'])
   end
+
 
   it("check if word has vowels then its a word") do
       expect(new_instance1.check_if_word?("Cat"))

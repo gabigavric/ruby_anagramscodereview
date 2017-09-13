@@ -1,9 +1,7 @@
 #!/usr/bin/env ruby
 
 class Words
-  def initialize(input1, input2)
-    @input1 = input1
-    @input2 = input2
+  def initialize()
   end
 
   def to_lower(word)
@@ -11,14 +9,14 @@ class Words
   end
 
   def remove_spaces_to_char(word)
-      to_lower(word).gsub(/\s+/, "").split(//)
+      to_lower(word).gsub(/\s+/, "").chars()
   end
 
-  def check_palindrome?()
-        remove_spaces_to_char(word1).sort() == remove_spaces_to_char(word2).sort()
+  def check_palindrome?(word1, word2)
+        remove_spaces_to_char(word1).reverse == remove_spaces_to_char(word2)
   end
 
-  def check_antigrams?()
+  def check_antigrams?(word1, word2)
         remove_spaces_to_char(word1).reverse == remove_spaces_to_char(word2)
   end
 

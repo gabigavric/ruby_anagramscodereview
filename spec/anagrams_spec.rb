@@ -17,6 +17,11 @@ describe('#anagrams') do
       expect(new_instance1.check_palindrome?("cat","Cat")).to eq(false)
   end
 
+  it("check to see if words are annagrams") do
+      expect(new_instance1.check_annagrams?("evil","live"))
+      expect(new_instance1.check_annagrams?("cat","Cat")).to eq(false)
+  end
+
 
 
 end

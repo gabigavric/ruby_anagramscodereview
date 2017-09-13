@@ -16,7 +16,7 @@ class Words
         remove_spaces_to_char(word1).reverse == remove_spaces_to_char(word2)
   end
 
-  def check_antigrams?(word1, word2)
+  def check_annagrams?(word1, word2)
         remove_spaces_to_char(word1).reverse == remove_spaces_to_char(word2)
   end
 

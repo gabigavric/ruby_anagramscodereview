@@ -11,7 +11,7 @@ class Words
   end
 
   def remove_spaces_to_char(word)
-      to_lower(word).gsub(/\s+/, "").split
+      to_lower(word).gsub(/\s+/, "").split(//)
   end
 
   def check_palindrome?()

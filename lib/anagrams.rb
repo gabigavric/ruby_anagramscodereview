@@ -8,6 +8,10 @@ class Words
     word.downcase()
   end
 
+  def check_if_word?(word)
+    remove_spaces_to_char(word).include? ['a','e','i','o','u','y']
+  end
+  
   def remove_spaces_to_char(word)
       to_lower(word).gsub(/\s+/, "").chars
   end
@@ -23,5 +27,8 @@ class Words
   def check_antigram?(word1, word2)
       remove_spaces_to_char(word1).include? remove_spaces_to_char(word1) == false
   end
+
+
+
 
 end

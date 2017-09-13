@@ -12,6 +12,12 @@ describe('#anagrams') do
       expect(new_instance1.remove_spaces_to_char("Cat")).to eq(['c','a','t'])
   end
 
+  it("check if word has vowels then its a word") do
+      expect(new_instance1.check_if_word?("Cat"))
+      expect(new_instance1.check_if_word?("Cbt")).to eq(false)
+  end
+
+
   it("check to see if words are palindroms") do
       expect(new_instance1.check_palindrome?("Madam","madam"))
       expect(new_instance1.check_palindrome?("cat","Cat")).to eq(false)

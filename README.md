@@ -5,10 +5,10 @@
 
 
 <h3>Author</h3>
-_Gabrijela Gavric_
+Gabrijela Gavric
 
 <h3>Description</h3>
-_This will compare two words to see if they are anagrams, antigrams, or palindromes._
+This will compare two words to see if they are anagrams, antigrams, or palindromes.
 
 <h3>Specifications</h3>
 <ul>
@@ -24,13 +24,13 @@ _This will compare two words to see if they are anagrams, antigrams, or palindro
 </ul>
 
 <h3>Technologies Used</h3>
-_Ruby_
+Ruby
 
 <h3>Installation</h3>
-_Install by cloning this repository._
+Install by cloning this repository.
 
-<h3>Liscense</h3>_
-_This software is licensed under the MIT liscense._
+<h3>License</h3>
+This software is licensed under the MIT license.
 
 Copyright (c) 2017 **Gabrijela Gavric**
 
